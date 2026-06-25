@@ -6,6 +6,7 @@
 [![npm version](https://img.shields.io/npm/v/@seneca/cache.svg)](https://npmjs.com/package/@seneca/cache)
 [![build](https://github.com/senecajs/seneca-cache/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-cache/actions/workflows/build.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-cache/badge.svg)](https://snyk.io/test/github/senecajs/seneca-cache)
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-cache/badge.svg?branch=master)](https://coveralls.io/github/senecajs/seneca-cache?branch=master)
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12815/branches/203961/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12815&bid=203961)
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
