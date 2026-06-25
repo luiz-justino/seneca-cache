@@ -6,12 +6,7 @@
 [![npm version](https://img.shields.io/npm/v/@seneca/cache.svg)](https://npmjs.com/package/@seneca/cache)
 [![build](https://github.com/senecajs/seneca-cache/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-cache/actions/workflows/build.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-cache/badge.svg)](https://snyk.io/test/github/senecajs/seneca-cache)
-[![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
-[![Coverage Status][coveralls-badge]][coveralls-url]
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12815/branches/203961/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12815&bid=203961)
-[![Dependency Status][david-badge]][david-url]
-[![Gitter][gitter-badge]][gitter-url]
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
@@ -235,10 +230,4 @@ Implements the Common Cache API for Seneca.
 
 [MIT]: ./LICENSE
 [Seneca.js]: https://www.npmjs.com/package/seneca
-[npm-badge]: https://img.shields.io/npm/v/@seneca/cache.svg
-[npm-url]: https://npmjs.com/package/@seneca/cache
-[gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
-[gitter-url]: https://gitter.im/senecajs/seneca
-[coveralls-badge]: https://coveralls.io/repos/github/senecajs/seneca-cache/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/senecajs/seneca-cache?branch=master
 [Senecajs org]: https://github.com/senecajs/
