@@ -9,14 +9,9 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
 [![Coverage Status][coveralls-badge]][coveralls-url]
-[![Maintainability](https://api.codeclimate.com/v1/badges/9328019ed993fb5b1085/maintainability)](https://codeclimate.com/github/senecajs/seneca-cache/maintainability)
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/12815/branches/203961/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=12815&bid=203961)
 [![Dependency Status][david-badge]][david-url]
 [![Gitter][gitter-badge]][gitter-url]
-
-
-
-
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
 |---|---|
@@ -44,7 +39,6 @@ seneca.ready(function(err) {
   });
 });
 ```
-
 
 <!--START:options-->
 
@@ -80,21 +74,15 @@ If you're using this module and need help, you can:
 
 * `micro.expiry` : number <i><small>11111</small></i>
 
-
 Set plugin options when loading with:
 ```js
 
-
 seneca.use('cache', { name: value, ... })
-
 
 ```
 
-
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
-
-
 
 <!--END:options-->
 
@@ -118,7 +106,6 @@ seneca.use('cache', { name: value, ... })
 * [role:lrucache,cmd:reset](#-rolelrucachecmdreset-)
 * [role:lrucache,cmd:values](#-rolelrucachecmdvalues-)
 
-
 <!--END:action-list-->
 
 <!--START:action-desc-->
@@ -129,108 +116,77 @@ seneca.use('cache', { name: value, ... })
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:clear` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:decr` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:delete` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:get` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:incr` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:micro` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,cmd:micro,get:stats` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:cache,cmd:set` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:cache,get:native` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:lrucache,cmd:has` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:lrucache,cmd:keys` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:lrucache,cmd:peek` &raquo;
 
 No description provided.
 
-
-
 ----------
 ### &laquo; `role:lrucache,cmd:reset` &raquo;
 
 No description provided.
-
-
 
 ----------
 ### &laquo; `role:lrucache,cmd:values` &raquo;
 
 No description provided.
 
-
-
 ----------
-
 
 <!--END:action-desc-->
 
@@ -279,12 +235,8 @@ Implements the Common Cache API for Seneca.
 
 [MIT]: ./LICENSE
 [Seneca.js]: https://www.npmjs.com/package/seneca
-[travis-badge]: https://travis-ci.org/senecajs/seneca-cache.svg
-[travis-url]: https://travis-ci.org/senecajs/seneca-cache
 [npm-badge]: https://img.shields.io/npm/v/@seneca/cache.svg
 [npm-url]: https://npmjs.com/package/@seneca/cache
-[david-badge]: https://david-dm.org/senecajs/seneca-cache.svg
-[david-url]: https://david-dm.org/senecajs/seneca-cache
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/senecajs/seneca
 [coveralls-badge]: https://coveralls.io/repos/github/senecajs/seneca-cache/badge.svg?branch=master
