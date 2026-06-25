@@ -108,9 +108,145 @@ seneca.use('cache', { name: value, ... })
 
 <!--START:action-desc-->
 
-## Contributing
+### Action Descriptions
 
-The [Senecajs org][] encourages open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
+### &laquo; `role:cache,cmd:add` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:clear` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:decr` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:delete` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:get` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:incr` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:micro` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:micro,get:stats` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,cmd:set` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:cache,get:native` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:lrucache,cmd:has` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:lrucache,cmd:keys` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:lrucache,cmd:peek` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:lrucache,cmd:reset` &raquo;
+
+No description provided.
+
+
+
+----------
+### &laquo; `role:lrucache,cmd:values` &raquo;
+
+No description provided.
+
+
+
+----------
+
+
+<!--END:action-desc-->
+
+### Common Cache API
+
+Seneca has a common caching API with the following actions:
+
+   * `role:cache, cmd:set` store a value - _key_ and _val_ arguments required
+   * `role:cache, cmd:get` retreive a value - _key_ argument is required
+   * `role:cache, cmd:add` store a value, only if the key does not exist - _key_ and _val_ arguments required
+   * `role:cache, cmd:delete` delete a value - _key_ argument is required, no error if key does not exist
+   * `role:cache, cmd:incr` increment a value - _key_ and _val_ (integer) arguments required
+   * `role:cache, cmd:decr` decrement a value - _key_ and _val_ (integer) arguments required
+
+All caching plugins, including this one, implement this action API.
+
+### Options
+
+You can use any of the options from the [lru-cache](https://github.com/isaacs/node-lru-cache) module directly as options to this plugin:
+
+```js
+seneca.use('cached', {
+  lrucache: {
+    max: 1000,
+    maxAge: 1000 * 60 * 60,
+    length: function(n) {return n.length}
+  }
+});
+```
+
+## Contributing
 
 The [Senecajs org][] encourages open participation. If you feel you
 can help in any way, be it with documentation, examples, extra
@@ -124,7 +260,7 @@ npm run test
 
 ## Background
 
-Implements the [Common Cache API](https://github.com/senecajs/seneca-cache/blob/main/README.md) for Seneca.
+Implements the Common Cache API for Seneca.
 
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
