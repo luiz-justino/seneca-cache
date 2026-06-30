@@ -17,7 +17,7 @@
 ```sh
 npm install seneca
 npm install seneca-cache
-```
+```js
 
 ### Quick example
 
@@ -34,7 +34,7 @@ seneca.ready(function(err) {
     });
   });
 });
-```
+```js
 
 <!--START:options-->
 
@@ -43,7 +43,7 @@ seneca.ready(function(err) {
 ```js
 require('seneca')()
   .use('seneca-cache')
-```
+```js
 
 ## More Examples
 
@@ -77,7 +77,7 @@ Set plugin options when loading with:
 
 seneca.use('cache', { name: value, ... })
 
-```
+```js
 
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
@@ -213,7 +213,7 @@ seneca.use('cached', {
     length: function(n) {return n.length}
   }
 });
-```
+```js
 
 ## Contributing
 
@@ -225,7 +225,7 @@ testing, or new features please get in touch.
 
 ```sh
 npm run test
-```
+```js
 
 ## Background
 
