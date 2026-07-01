@@ -14,16 +14,15 @@
 
 ## Install
 
-```sh
+```
 npm install seneca
 npm install seneca-cache
-```js
-
+```
 ### Quick example
 
 This code snippet sets a value and then retrieves it.
 
-```js
+```
 var seneca = require('seneca')();
 seneca.use('cache');
 
@@ -34,17 +33,15 @@ seneca.ready(function(err) {
     });
   });
 });
-```js
-
+```
 <!--START:options-->
 
 ## Quick Example
 
-```js
+```
 require('seneca')()
   .use('seneca-cache')
-```js
-
+```
 ## More Examples
 
 See [test/](test/) for usage examples.
@@ -73,12 +70,10 @@ If you're using this module and need help, you can:
 * `micro.expiry` : number <i><small>11111</small></i>
 
 Set plugin options when loading with:
-```js
-
+```
 seneca.use('cache', { name: value, ... })
 
-```js
-
+```
 <small>Note: <code>foo.bar</code> in the list above means 
 <code>{ foo: { bar: ... } }</code></small> 
 
@@ -205,7 +200,7 @@ All caching plugins, including this one, implement this action API.
 
 You can use any of the options from the [lru-cache](https://github.com/isaacs/node-lru-cache) module directly as options to this plugin:
 
-```js
+```
 seneca.use('cached', {
   lrucache: {
     max: 1000,
@@ -213,8 +208,7 @@ seneca.use('cached', {
     length: function(n) {return n.length}
   }
 });
-```js
-
+```
 ## Contributing
 
 The [Senecajs org][] encourages open participation. If you feel you
@@ -223,10 +217,9 @@ testing, or new features please get in touch.
 
 ### Running tests
 
-```sh
+```
 npm run test
-```js
-
+```
 ## Background
 
 Implements the Common Cache API for Seneca.
